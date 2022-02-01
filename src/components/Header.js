@@ -12,7 +12,7 @@ function Header() {
       </div>
       <div className="header-customer">
             <a href="#">ورود</a>|
-            <a href="#">ثبت آگهی رایگان</a>
+            <a href="#">ثبت آگهی <b className="free">رایگان</b></a>
       </div>
       <div className="header-logo">
             <img src='./images/download.png'></img>

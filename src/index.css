@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'xsans';
+  src:  url('fonts/NotoKufiArabic-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +15,7 @@ html {
 }
 body {
   font-size: 1.6rem;
-  font-family: "XSANS", "Tahoma", "sans-serif";
+  font-family: 'xsans', 'Tahoma', 'Sans-Serif';
   direction: rtl;
   width: 100%;
   height: 100%;
@@ -17,7 +24,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: red;
   width: 100%;
   height: 100vh;
 }
@@ -30,7 +36,62 @@ body {
   height: 100%;
 }
 .header{
-  background: white
+  background: white;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  color: #5F5F5F;
+  padding-top: 38px;
+  padding-bottom: 53px;
+  border-bottom: 1px solid #b2b2b2;
+}
+.header a{
+  text-decoration: none;
+  color: #5F5F5F;
+}
+.header a:hover{
+  background: #F0F0F0;
+  padding: 10px;
+}
+.header-vehicles {
+  margin-top: 12px
+}
+.header-vehicles a{
+  font-weight: bold;
+  padding: 10px;
+  font-size: 15px;
+}
+.header-customer{
+  margin-top: 14px
+}
+.header-customer a{
+  padding: 10px;
+  font-size: 12px;
+}
+.header-logo img{
+  width: 10rem;
+  height: 8.1rem;
+}
+.header-search {
+  margin-top: 12px;
+  margin-right: 60px;
+}
+.header-search input{
+  width: 300px;
+  height: 37px;
+  padding: 10px;
+  border: none;
+  background: #F0F0F0;
+  color: #5F5F5F;
+  border-bottom: 2px solid rgb(188,235,231);
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: 'xsans';
+}
+.free{
+  color: #EE45A9;
+  font-size: 9px;
 }
 .homepage {
   background: green;
