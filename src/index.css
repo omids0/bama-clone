@@ -91,11 +91,32 @@ body {
 }
 .free{
   color: #EE45A9;
-  font-size: 9px;
+  font-size: 10px;
 }
 .homepage {
   background: green;
 }
 .footer {
-  background: white
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  border: none;
+  padding: 6px 0;
+  font-size: 12px;
+  border-top: 1px solid #b2b2b2;
+  color: #919191;
+  align-items: center;
+}
+.footer-date{
+  direction: ltr;
+}
+.bi{
+  font-size: 16px;
+  color: #e0e0e0
+}
+.bi:hover{
+  color: #5F5F5F;
+}
+.bi-twitter{
+  margin: 0 20px;
 }
