@@ -31,7 +31,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: yellow;
   width: 97.6rem;
   height: 100%;
 }
@@ -94,7 +93,41 @@ body {
   font-size: 10px;
 }
 .homepage {
-  background: green;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  margin:28px 0
+}
+.homepage-tabs{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: white;
+  padding-left: 20px;
+}
+.homepage-tabs div{
+  background: white;
+  padding: 30px 10px;
+}
+.tab:hover{
+  color: #EE45A9
+}
+.homepage-tabs a{
+  text-decoration: none;
+  color: #7b7b7b;
+  font-size: 13px;
+}
+.homepage-tab-section{
+  border-bottom: 1px solid #b2b2b2;
+}
+.homepage-details{
+  width: 750px;
+  height: 420px;
+  background: #e0e0e0
 }
 .footer {
   display: flex;
