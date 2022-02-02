@@ -31,10 +31,13 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 97.6rem;
+  width: 960px;
   height: 100%;
 }
 .header{
+  width: 100%;
+}
+.header-desktop{
   background: white;
   display: flex;
   width: 100%;
@@ -94,12 +97,53 @@ body {
   font-size: 10px;
 }
 .homepage {
+  height: 100%;
+  margin:28px 0
+}
+.homepage-dektop{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   height: 100%;
-  margin:28px 0
+}
+.header-mobile{
+  display: none;
+}
+.header-mobile-btn-gp{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 12px;
+}
+.mobile-logo{
+  width: 90px;
+  height:17px;
+}
+.header-mobile-right-btns{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  padding: 0
+}
+.header-mobile-search{
+  width: 100%;
+  padding:  0 12px;
+}
+.header-mobile-search input{
+  width: 100%;
+  background: white;
+  padding: 8px;
+  border: none;
+  color: #5F5F5F;
+  border-bottom: 2px solid rgb(188,235,231);
+  border-radius: 4px;
+  font-size: 15px;
+  font-family: 'xsans';
+  font-weight: 500;
+  margin-bottom: 10px;
 }
 .homepage-tabs{
   width: 20%;
@@ -209,6 +253,9 @@ body {
 .footer-date{
   direction: ltr;
 }
+.footer-social{
+  display: flex;
+}
 .bi{
   font-size: 16px;
   color: #e0e0e0
@@ -218,4 +265,44 @@ body {
 }
 .bi-twitter{
   margin: 0 20px;
+}
+.bi-list{
+  color: #333;
+  font-size: 36px;
+  font-weight: 700;
+}
+.save-free{
+  font-size: 12px;
+  border: 1px solid rgb(198,198,198);
+  border-radius: 3px;
+  padding: 1px 4px
+}
+
+@media (max-width: 960px) {
+  .header-desktop, .footer-social, .homepage-dektop{
+    display: none;
+  }
+  .footer{
+    display: flex;
+    flex-direction: row;
+    margin: 30px 10px 0px 10px;
+    direction: ltr;
+  }
+  .header-mobile{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: rgb(244,244,244);
+  }
+  .header-mobile-part3{
+    background: rgb(250,250,250);
+    font-size: 14px;
+    font-weight: 700;
+    color: #666;
+    padding: 10px 12px
+  }
+  .header-mobile-part3 span{
+    color: rgb(5, 189, 178);
+    padding-left: 4px;
+  }
 }
