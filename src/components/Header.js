@@ -1,4 +1,5 @@
 import React from 'react';
+import Slide from 'react-reveal/Slide'
 
 function Header() {
       return <div className="header">
@@ -24,7 +25,7 @@ function Header() {
                         <div className='header-mobile-right-btns'>
                               <i class="bi bi-list"></i>
                               <a className="save-free" href='#'>
-                              ثبت آگهی <span className="free">رایگان</span>
+                                    ثبت آگهی <span className="free">رایگان</span>
                               </a>
                         </div>
                         <div>
@@ -32,7 +33,9 @@ function Header() {
                         </div>
                   </div>
                   <div className='header-mobile-search'>
-                        <input type="text" placeholder='جستجو' />
+                        <Slide right>
+                              <input type="text" placeholder='جستجو' />
+                        </Slide>
                   </div>
                   <div className='header-mobile-part3'>
                         <span> 32.485</span>آگهی خودرو

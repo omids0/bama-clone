@@ -107,6 +107,9 @@ body {
   align-items: center;
   height: 100%;
 }
+.homepage-mobile{
+  display: none;
+}
 .header-mobile{
   display: none;
 }
@@ -173,7 +176,18 @@ body {
   color: #EE45A9
 }
 .homepage-tab-section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   border-bottom: 1px solid #b2b2b2;
+}
+.homepage-tab-section-tab4{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.remove-tab{
+  color: #b2b2b2
 }
 .homepage-details{
   width: 750px;
@@ -182,9 +196,13 @@ body {
 }
 .slide{
   width: 100%;
-  height: 50%;
+  height: 100%;
   padding: 50px;
   z-index: 10
+}
+.slide-show{
+  width: 100%;
+  height: 50%;
 }
 .slide-container{
   display: flex;
@@ -205,7 +223,7 @@ body {
   background: white;
   position: relative;
   left: 0px;
-  top: 40px;
+  top: 20px;
   border-radius: 50%
 }
 .slide1{
@@ -304,5 +322,46 @@ body {
   .header-mobile-part3 span{
     color: rgb(5, 189, 178);
     padding-left: 4px;
+  }
+  .homepage{
+    margin: 0;
+  }
+  .homepage-mobile{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .homepage-mobile-tabs{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+  }
+  .homepage-mobile-tab{
+    background: white;
+    width: 25%;
+    border: none;
+    font-family: 'xsans', 'Tahoma', 'Sans-Serif';
+    font-size: 14px;
+    color: #b2b2b2;
+    padding: 10px;
+    border-bottom: 1px solid #b2b2b2;
+  }
+  .homepage-mobile-tab:hover {
+    color: #EE45A9;
+    border-bottom: 1px solid #EE45A9;
+  }
+  .homepage-mobile-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    height: 100%
+  }
+  .homepage-mobile-content div{
+    height: 100%;
   }
 }
