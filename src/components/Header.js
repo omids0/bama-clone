@@ -6,7 +6,7 @@ function Header() {
             <div className="header-desktop">
                   <div className="header-vehicles">
                         <div className="dropdown">
-                              <a href="#1" className="dropbtn">خودرو</a>|
+                              <a href="#1" className="dropbtn header-car">خودرو</a>|
                               <div class="dropdown-content">
                                     <a href="#1">خرید خودرو</a>
                                     <a href="#2">ثبت آگهی خودرو</a>

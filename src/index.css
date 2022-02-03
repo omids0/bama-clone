@@ -37,6 +37,9 @@ body {
 .header{
   width: 100%;
 }
+.header-car{
+  padding-right: 0 !important;
+}
 /*dropdown menu*/
 .dropbtn {
   border: none;
@@ -92,12 +95,12 @@ body {
 .header-vehicles {
   display:flex;
   flex-direction: row;
-  margin-top: 14px
+  margin-top: 14px;
 }
 .header-vehicles a{
   font-weight: bold;
   padding: 10px;
-  font-size: 14px;
+  font-size: 15px;
 }
 .header-customer{
   margin-top: 14px
@@ -132,9 +135,9 @@ body {
   color: #5F5F5F;
   border-bottom: 2px solid rgb(188,235,231);
   border-radius: 4px;
-  font-size: 15px;
+  font-size: 14px;
   font-family: 'xsans';
-  font-weight: 500;
+  font-weight: 400;
 }
 .bi-search{
   z-index: 5;
@@ -168,7 +171,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0 12px;
+  padding: 0 20px;
 }
 .mobile-logo{
   width: 90px;
@@ -183,17 +186,18 @@ body {
 }
 .header-mobile-search{
   width: 100%;
-  padding:  0 12px;
+  padding:  0 20px;
+  margin-bottom: 12px;
 }
 .header-mobile-search input{
   width: 100%;
   background: white;
-  padding: 8px;
+  padding: 5px;
   border: none;
   color: #5F5F5F;
   border-bottom: 2px solid rgb(188,235,231);
   border-radius: 4px;
-  font-size: 15px;
+  font-size: 14px;
   font-family: 'xsans';
   font-weight: 500;
   margin-bottom: 10px;
@@ -348,13 +352,14 @@ body {
   background: white;
   border: none;
   padding: 6px 0;
-  font-size: 12px;
+  font-size: 13px;
   border-top: 1px solid #b2b2b2;
-  color: #919191;
+  color: #5F5F5F;
   align-items: center;
 }
 .footer-date{
   direction: ltr;
+
 }
 .footer-social{
   display: flex;
@@ -378,7 +383,40 @@ body {
   font-size: 12px;
   border: 1px solid rgb(198,198,198);
   border-radius: 3px;
-  padding: 1px 4px
+  padding: 1px 8px;
+}
+.save-free:hover{
+  padding: 1px 8px !important;
+
+}
+
+.mobile-tab-one{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+.mobile-tab-one-icon{
+  width: 25%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin: 0 20px;
+}
+
+.mobile-tab-one-icon svg {
+  width: 50%;
+  height: 50%;
+  font-weight: 300;
+  color: #e0e0e0
+}
+.mobile-tab-one-icon p{
+  font-size: 12px;
+  color: #999;
 }
 
 @media (max-width: 960px) {
@@ -402,7 +440,7 @@ body {
     font-size: 14px;
     font-weight: 700;
     color: #666;
-    padding: 10px 12px
+    padding: 10px 20px
   }
   .header-mobile-part3 span{
     color: rgb(5, 189, 178);
@@ -434,6 +472,17 @@ body {
     padding: 10px;
     border-bottom: 1px solid #b2b2b2;
   }
+  .mobile-active-tab{
+    background: white;
+    width: 25%;
+    border: none;
+    font-family: 'xsans', 'Tahoma', 'Sans-Serif';
+    font-size: 14px;
+    color: #EE45A9;
+    padding: 10px;
+    font-weight: bold;
+    border-bottom: 2px solid #EE45A9;
+  }
   .homepage-mobile-tab:hover {
     color: #EE45A9;
     border-bottom: 1px solid #EE45A9;
@@ -443,10 +492,13 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 50px;
     height: 100%
   }
-  .homepage-mobile-content div{
+  .open-tab{
+    width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
