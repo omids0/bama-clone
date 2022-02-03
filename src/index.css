@@ -37,6 +37,36 @@ body {
 .header{
   width: 100%;
 }
+/*dropdown menu*/
+.dropbtn {
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  z-index: 1;
+  border-bottom: 4px solid rgba(153, 153, 153, 0.2);
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
 .header-desktop{
   background: white;
   display: flex;
@@ -45,7 +75,7 @@ body {
   align-items: center;
   color: #5F5F5F;
   padding-top: 38px;
-  padding-bottom: 53px;
+  padding-bottom: 34px;
   border-bottom: 1px solid #b2b2b2;
 }
 .header a{
@@ -57,12 +87,14 @@ body {
   padding: 10px;
 }
 .header-vehicles {
-  margin-top: 12px
+  display:flex;
+  flex-direction: row;
+  margin-top: 14px
 }
 .header-vehicles a{
   font-weight: bold;
   padding: 10px;
-  font-size: 15px;
+  font-size: 14px;
 }
 .header-customer{
   margin-top: 14px
@@ -167,13 +199,16 @@ body {
 .tab:active{
   color: #EE45A9
 }
-.homepage-tabs a{
+.active-desktop-tab{
+  text-decoration: none;
+  font-size: 13px;
+  color: #EE45A9;
+  font-weight: bold;
+}
+.tab{
   text-decoration: none;
   color: #7b7b7b;
   font-size: 13px;
-}
-.homepage-tabs a:active{
-  color: #EE45A9
 }
 .homepage-tab-section{
   display: flex;
@@ -187,12 +222,23 @@ body {
   justify-content: space-between;
 }
 .remove-tab{
-  color: #b2b2b2
+  color: #b2b2b2;
+  font-size: 13px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.remove-tab:hover{
+  color: #333;
 }
 .homepage-details{
   width: 750px;
   height: 420px;
   background: #F0F0F0;
+}
+.homepage-details-in-tab{
+  width: 750px;
+  height: 420px;
+  background: white;
 }
 .slide{
   width: 100%;
@@ -218,6 +264,9 @@ body {
   font-size: 15px;
 }
 .slide-circle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 300px;
   height: 300px;
   background: white;
@@ -225,6 +274,24 @@ body {
   left: 0px;
   top: 20px;
   border-radius: 50%
+}
+.bi-clock-history{
+  width: 250px;
+  height: 250px;
+  font-size: 30px;
+  color: #666;
+}
+.bi-minecart-slide{
+  width: 200px;
+  height: 200px;
+  font-size: 30px;
+  color: #666;
+}
+.bi-graph-up{
+  width: 150px;
+  height: 150px;
+  font-size: 30px;
+  color: #666;
 }
 .slide1{
   background: #EE45A9
@@ -274,7 +341,7 @@ body {
 .footer-social{
   display: flex;
 }
-.bi{
+.biSocial{
   font-size: 16px;
   color: #e0e0e0
 }
