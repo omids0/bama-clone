@@ -6,27 +6,35 @@ function Header() {
             <div className="header-desktop">
                   <div className="header-vehicles">
                         <div className="dropdown">
-                              <a href="#" className="dropbtn">خودرو</a>|
+                              <a href="#1" className="dropbtn">خودرو</a>|
                               <div class="dropdown-content">
-                                    <a href="#">Link 1</a>
-                                    <a href="#">Link 2</a>
-                                    <a href="#">Link 3</a>
+                                    <a href="#1">خرید خودرو</a>
+                                    <a href="#2">ثبت آگهی خودرو</a>
+                                    <a href="#3">قیمت روز خودرو</a>
+                                    <a href="#1">اخبار خودرو</a>
+                                    <a href="#2">مشخصات فنی خودرو</a>
+                                    <a href="#3">گوش به زنگ خودرو</a>
+                                    <a href="#3">کمپانی‌های خودرو</a>
                               </div>
                         </div>
                         <div className="dropdown">
-                              <a href="#" className="dropbtn">موتورسیکلت</a>|
+                              <a href="#2" className="dropbtn">موتورسیکلت</a>|
                               <div class="dropdown-content">
-                                    <a href="#">Link 1</a>
-                                    <a href="#">Link 2</a>
-                                    <a href="#">Link 3</a>
+                                    <a href="#1">خرید موتورسیکلت</a>
+                                    <a href="#2">ثبت آگهی موتورسیکلت</a>
+                                    <a href="#3">اخبار موتورسیکلت</a>
+                                    <a href="#3">گوشی به زنگ موتورسیکلت</a>
                               </div>
                         </div>
                         <div className="dropdown">
-                              <a href="#" className="dropbtn">باما</a>
+                              <a href="#3" className="dropbtn">باما</a>
                               <div class="dropdown-content">
-                                    <a href="#">Link 1</a>
-                                    <a href="#">Link 2</a>
-                                    <a href="#">Link 3</a>
+                                    <a href="#1">ثبت‌نام نمایشگاه</a>
+                                    <a href="#2">تماس باما</a>
+                                    <a href="#3">تبلیغات شرکت‌ها</a>
+                                    <a href="#1">قوانین سایت</a>
+                                    <a href="#2">فرصت‌های شغلی</a>
+                                    <a href="#3">درباره ما</a>
                               </div>
                         </div>
                   </div>
@@ -37,18 +45,18 @@ function Header() {
                         </svg>
                   </div>
                   <div className="header-customer">
-                        <a href="#">ورود</a>|
-                        <a href="#">ثبت آگهی <span className="free">رایگان</span></a>
+                        <a href="#1">ورود</a>|
+                        <a href="#1">ثبت آگهی <span className="free">رایگان</span></a>
                   </div>
                   <div className="header-logo">
-                        <img src='./images/download.png'></img>
+                        <img src='./images/download.png' alt='logo'/> 
                   </div>
             </div>
             <div className="header-mobile">
                   <div className="header-mobile-btn-gp">
                         <div className='header-mobile-right-btns'>
                               <i class="bi bi-list"></i>
-                              <a className="save-free" href='#'>
+                              <a className="save-free" href='#1'>
                                     ثبت آگهی <span className="free">رایگان</span>
                               </a>
                         </div>
