@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Slide from 'react-reveal/Slide'
 
 function Homepage() {
+      //useEffects
       const [firstSlide, setfirstSlide] = useState(true);
       const [secondeSlide, setSecondeSlide] = useState(false);
       const [thirdSlide, setThirdSlide] = useState(false);
@@ -19,13 +20,7 @@ function Homepage() {
       const [desktopTap3, setdesktopTap3] = useState(false);
       const [desktopTap4, setdesktopTap4] = useState(false);
 
-      function slideChange() {
-            let counter = timer
-            setInterval(() => {
-                  counter++
-                  return settimer(counter)
-            }, 1000);
-      }
+      //functions
 
       function selectedTab(tab) {
             if (tab === 'tab1') {
@@ -86,21 +81,34 @@ function Homepage() {
             }
       }
 
+      //useEffect
       useEffect(() => {
+            let counter = timer
 
-            slideChange()
+            // if (timer === 15){
+            //       counter = 0
+            //       settimer(0)
+            //       setThirdSlide(false);
+            //       setSecondeSlide(false)
+            //       setfirstSlide(true)
+            // }
 
-            if (timer >= 5 && timer < 10) {
+            if (timer > 5 && timer < 10) {
                   setfirstSlide(false)
                   setSecondeSlide(true)
             }
 
-            if (timer >= 10) {
+            if (timer >= 10 && timer < 14) {
                   setSecondeSlide(false)
                   setThirdSlide(true)
             }
 
-      }, [timer, firstSlide, secondeSlide, thirdSlide]);
+            setInterval(() => {
+                  counter++;
+                  return settimer(counter)
+            }, 1000);
+
+      }, [timer]);
 
       return <div className="homepage">
             <div className="homepage-dektop">
