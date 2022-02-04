@@ -104,10 +104,10 @@ function Homepage() {
                   setThirdSlide(true)
             }
 
-            // setInterval(() => {
-            //       counter++;
-            //       return settimer(counter)
-            // }, 1000);
+            setInterval(() => {
+                  counter++;
+                  return settimer(counter)
+            }, 1000);
 
 
       }, [timer]);
