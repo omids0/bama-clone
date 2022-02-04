@@ -85,13 +85,13 @@ function Homepage() {
       useEffect(() => {
             let counter = timer
 
-            // if (timer === 15){
-            //       counter = 0
-            //       settimer(0)
-            //       setThirdSlide(false);
-            //       setSecondeSlide(false)
-            //       setfirstSlide(true)
-            // }
+            if (timer === 15){
+                  counter = 0
+                  settimer(0)
+                  setThirdSlide(false);
+                  setSecondeSlide(false)
+                  setfirstSlide(true)
+            }
 
             if (timer > 5 && timer < 10) {
                   setfirstSlide(false)
