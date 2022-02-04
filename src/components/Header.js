@@ -4,6 +4,7 @@ import Slide from 'react-reveal/Slide'
 function Header() {
       const [searching, setsearching] = useState(false);
       const [mobileMenu, setmobileMenu] = useState(true);
+      let year = '2021'
 
       return <div className="header">
             <div className="header-desktop">
@@ -56,14 +57,9 @@ function Header() {
                   </div>
             </div>
             <div className="header-mobile">
-                  {mobileMenu && <div className='header-mobile-menu'>
-                        <div>1</div>
-                        <div>2</div>
-                        <div>3</div>
-                  </div>}
                   <div className="header-mobile-btn-gp">
                         <div className='header-mobile-right-btns'>
-                              <i class="bi bi-list"></i>
+                              <i class="bi bi-list" onClick={() => setmobileMenu(true)}></i>
                               <a className="save-free" href='#1'>
                                     ثبت آگهی <span className="free">رایگان</span>
                               </a>
@@ -101,6 +97,34 @@ function Header() {
                               <div className='searching1'></div>
                               <div className='searching2'></div>
                               <div className='searching3'></div>
+                        </div>
+                  </div>
+            </div>}
+
+            {mobileMenu && <div className='header-mobile-menu'>
+                  <div className='header-mobile-menu1'>
+                        <div><p onClick={() => setmobileMenu(false)} className='header-mobile-menu1-close'>X</p></div>
+                        <div><p className='header-mobile-menu1-logo'>bama.ir</p></div>
+                  </div>
+                  <div className='header-mobile-menu2'>
+                        <p>ورود | ثبت نام</p>
+                        <p>ثبت آگهی</p>
+                        <p>خودرو</p>
+                        <p>موتورسیکلت</p>
+                        <p>ثبت‌نام نمایشگاه</p>
+                        <p>تماس با ما</p>
+                        <p>تبلیغات شرکت‌ها</p>
+                        <p>قوانین سایت</p>
+                        <p>فرصت‌های شغلی</p>
+                  </div>
+                  <div className='header-mobile-menu3'>
+                        <div className='footer-description-menu'>
+                              <p className='footer-date'>{`©${year} MGNet Co. Ltd.`}</p>
+                        </div>
+                        <div className='footer-social-menu'>
+                              <a href="https://www.instagram.com/bama.social/"><i class="bi bi-instagram biSocial"></i></a>
+                              <a href="https://twitter.com/bama_social"><i class="bi bi-twitter biSocial"></i></a>
+                              <a href="https://www.linkedin.com//company/bama-social"><i class="bi bi-linkedin biSocial"></i></a>
                         </div>
                   </div>
             </div>}
