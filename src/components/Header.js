@@ -3,7 +3,7 @@ import Slide from 'react-reveal/Slide'
 
 function Header() {
       const [searching, setsearching] = useState(false);
-      const [mobileMenu, setmobileMenu] = useState(true);
+      const [mobileMenu, setmobileMenu] = useState(false);
       let year = '2021'
 
       return <div className="header">

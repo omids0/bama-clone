@@ -278,7 +278,7 @@ body {
   height:17px;
 }
 .header-mobile-menu{
-  width: 300px;
+  width: 280px;
   height: 100vh;
   background: rgb(238, 238, 238);
   display: flex;
@@ -312,7 +312,9 @@ body {
 .header-mobile-menu2{
   overflow-y: scroll;
   color: #333;
-  font-size: 18px
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
 }
 .header-mobile-menu2 p{
   padding: 20px;
