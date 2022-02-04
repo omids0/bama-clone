@@ -17,7 +17,8 @@ body {
   font-family: 'xsans', 'Tahoma', 'Sans-Serif';
   direction: rtl;
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  background-color: none;
 }
 .app {
   display: flex;
@@ -33,6 +34,7 @@ body {
   /* width: 100%; */
   /* max-width: 960px; */
   height: 100%;
+  background-color: none;
 }
 .header{
   width: 100%;
@@ -167,7 +169,7 @@ body {
 .dropdown:hover .dropdown-content {display: block;}
 
 .header-desktop{
-  background: white;
+  background: none;
   display: flex;
   width: 100%;
   min-width: 960px;
@@ -364,11 +366,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background: white;
+  background: none;
   padding-left: 20px;
 }
 .homepage-tabs div{
-  background: white;
+  background: none;
   padding: 30px 10px;
 }
 .tab:hover{
@@ -507,7 +509,7 @@ body {
   max-width: 960px;
   display: flex;
   justify-content: space-between;
-  background: white;
+  background-color: none;
   border: none;
   padding: 6px 0;
   font-size: 13px;
@@ -547,7 +549,9 @@ body {
   padding: 1px 8px !important;
 
 }
-
+/* .mobile-tab-choose{
+  color: red !important;
+} */
 .mobile-tab-one{
   display: flex;
   flex-direction: row;
@@ -575,6 +579,26 @@ body {
   font-size: 12px;
   color: #999;
 }
+.darkmobile{
+  opacity: .7;
+}
+.mode{
+  background: none;
+  border: none;
+  padding: 10px;
+  font-size: 24px;
+}
+.bi-cloud-sun{
+  color: orange !important;
+  font-size: 24px;
+  min-width: 24px;
+  height: 30px;
+}
+.bi-cloud-moon{
+  font-size: 24px;
+  min-width: 24px;
+  height: 24px;
+}
 
 @media (max-width: 960px) {
   body{
@@ -588,7 +612,8 @@ body {
     flex-direction: row;
     margin-top: 30px;
     direction: ltr;
-    padding: 12px
+    padding: 12px;
+    background-color: none;
   }
   .header-mobile{
     width: 100%;
@@ -609,6 +634,7 @@ body {
   }
   .homepage{
     margin: 0;
+    color: #666;
   }
   .homepage-mobile{
     width: 100%;
@@ -624,7 +650,7 @@ body {
     justify-content:space-between;
   }
   .homepage-mobile-tab{
-    background: white;
+    background: rgba(255, 255, 255, 0.6);
     width: 25%;
     border: none;
     font-family: 'xsans', 'Tahoma', 'Sans-Serif';
@@ -634,7 +660,7 @@ body {
     border-bottom: 1px solid #b2b2b2;
   }
   .mobile-active-tab{
-    background: white;
+    background: none;
     width: 25%;
     border: none;
     font-family: 'xsans', 'Tahoma', 'Sans-Serif';
@@ -663,6 +689,7 @@ body {
   }
   .app-container{
     width: 100%;
+    height: 100%;
   }
   .searching-body{
     width: 100%;
