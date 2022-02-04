@@ -311,8 +311,9 @@ body {
 }
 .header-mobile-menu2{
   overflow-y: scroll;
-  color: #333;
-  font-size: 18px;
+  color: #666;
+  font-size: 15px;
+  font-weight: bold;
   display: flex;
   flex-direction: column;
 }
@@ -627,7 +628,7 @@ body {
     width: 25%;
     border: none;
     font-family: 'xsans', 'Tahoma', 'Sans-Serif';
-    font-size: 14px;
+    font-size: 13px;
     color: #b2b2b2;
     padding: 10px;
     border-bottom: 1px solid #b2b2b2;
@@ -637,7 +638,7 @@ body {
     width: 25%;
     border: none;
     font-family: 'xsans', 'Tahoma', 'Sans-Serif';
-    font-size: 14px;
+    font-size: 13px;
     color: #EE45A9;
     padding: 10px;
     font-weight: bold;
